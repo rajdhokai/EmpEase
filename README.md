@@ -6,7 +6,6 @@ EmpEase is a clean and user-friendly **Angular 18 CRUD application** for managin
   <img src="./public/assets/empease-logo.png" alt="EmpEase Logo" width="150"/>
 </div>
 
----
 
 ## 🚀 Features
 
@@ -17,7 +16,7 @@ EmpEase is a clean and user-friendly **Angular 18 CRUD application** for managin
 - ✅ Form validation & user feedback
 - 📱 Responsive design with Bootstrap
 
----
+
 
 ## 🧰 Tech Stack
 
@@ -27,7 +26,7 @@ EmpEase is a clean and user-friendly **Angular 18 CRUD application** for managin
 - **TypeScript**
 - **LocalStorage** (for data persistence)
 
----
+
 
 ## 📦 Project Setup
 
