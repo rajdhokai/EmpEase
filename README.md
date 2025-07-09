@@ -3,7 +3,7 @@
 
 EmpEase is a clean and user-friendly **Angular 18 CRUD application** for managing employee records. Built using Angular, Bootstrap 5, and Font Awesome, it allows you to **Create, Read, Update, and Delete (CRUD)** employee details easily.
 
-![EmpEase Logo](./assets/empease-logo.png)
+![EmpEase Logo](./public//assets/empease-logo.png)
 
 ---
 
