@@ -1,9 +1,10 @@
-````md
 # EmpEase – Employee Management System
 
 EmpEase is a clean and user-friendly **Angular 18 CRUD application** for managing employee records. Built using Angular, Bootstrap 5, and Font Awesome, it allows you to **Create, Read, Update, and Delete (CRUD)** employee details easily.
 
-![EmpEase Logo](./public//assets/empease-logo.png)
+<div align="center">
+  <img src="./public/assets/empease-logo.png" alt="EmpEase Logo" width="150"/>
+</div>
 
 ---
 
@@ -31,12 +32,10 @@ EmpEase is a clean and user-friendly **Angular 18 CRUD application** for managin
 ## 📦 Project Setup
 
 ### 1. Clone the Repository
-
 ```bash
 git clone https://github.com/rajdhokai/empease.git
 cd empease
-````
-
+```
 ### 2. Install Dependencies
 
 ```bash
@@ -51,7 +50,6 @@ npm start
 
 The app will run at: [http://localhost:4200](http://localhost:4200)
 
----
 
 ## 📁 Folder Structure
 
@@ -71,14 +69,6 @@ src/
 └── main.ts
 ```
 
----
-
-## 📸 Screenshots (optional)
-
-> 📌 Add screenshots here of employee list, add form, edit form etc. for better portfolio appeal.
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License.
@@ -87,7 +77,7 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Codebuster**
 GitHub: [@rajdhokai](https://github.com/rajdhokai)
 
 ---
