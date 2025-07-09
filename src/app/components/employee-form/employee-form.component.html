@@ -1,0 +1,54 @@
+<div class="container mt-4">
+    <h2>{{ isEditMode ? 'Edit Employee' : 'Add Employee' }}</h2>
+
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" formControlName="fullName">
+            @if (employeeForm.get('fullName')?.invalid && employeeForm.get('fullName')?.touched) {
+            <div class="text-danger">Name is required</div>
+            }
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" formControlName="email">
+            @if (employeeForm.get('email')?.invalid && employeeForm.get('email')?.touched) {
+            <div class="text-danger">Valid email is required</div>
+            }
+        </div>
+
+        @if (!isEditMode) {
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" formControlName="password">
+            @if (employeeForm.get('password')?.invalid && employeeForm.get('password')?.touched) {
+            <div class="text-danger">Password must be at least 6 characters</div>
+            }
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" formControlName="confirmPassword">
+            @if (employeeForm.hasError('mismatch') && employeeForm.get('confirmPassword')?.touched) {
+            <div class="text-danger">Passwords do not match</div>
+            }
+        </div>
+        }
+
+        <div class="mb-3">
+            <label class="form-label">Avatar</label>
+            <input type="file" class="form-control" (change)="onFileChange($event)">
+            @if (avatarPreview) {
+            <div class="mt-2">
+                <img [src]="avatarPreview" alt="Preview" class="img-thumbnail" width="100">
+            </div>
+            }
+        </div>
+
+        <button type="submit" class="btn btn-primary me-2" [disabled]="employeeForm.invalid">
+            {{ isEditMode ? 'Update' : 'Save' }}
+        </button>
+        <a routerLink="/employees" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
